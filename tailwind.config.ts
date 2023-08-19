@@ -18,6 +18,7 @@ const config: Config = {
         black: '#000000',
         primary: '#74C69D',
         white: '#FFFFFF',
+        gray: '#21252980',
       },
     },
     screens: {

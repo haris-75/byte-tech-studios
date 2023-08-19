@@ -1,5 +1,7 @@
 import Container from '@/common/container';
 import heroImg from '@/assets/hero-img.png';
+import connectImg from '@/assets/connect.png';
+import businessImg from '@/assets/business.png';
 import fbImg from '@/assets/fb.png';
 import googleImg from '@/assets/google.png';
 import microsoftImg from '@/assets/microsoft.png';
@@ -57,10 +59,11 @@ export default function Home() {
           />
         </div>
       </Container>
+
       {/* Partner Section */}
       <Container
         customClass='bg-white flex flex-col xl:gap-[80px] lg:gap-[40px] md:gap-[20px] gap-[30px] justify-between items-center'
-        bgColor='bg-primary'
+        bgColor='bg-white'
       >
         <header className='text-black text-center lg:max-w-[380px] max-w-[300px] font-work-sans'>
           <H2 customClass='text-primary'>Partners</H2>
@@ -89,6 +92,89 @@ export default function Home() {
           <ImgContainer
             src={spotifyImg}
             alt='spotify-logo'
+          />
+        </div>
+        <div>
+          <Button
+            text='Learn More'
+            variant='dark'
+          />
+        </div>
+      </Container>
+
+      {/* Connect Section */}
+      <Container
+        customClass='bg-white flex sm:flex-row-reverse flex-col xl:gap-[80px] lg:gap-[40px] md:gap-[20px] gap-[30px] justify-between items-center'
+        bgColor='bg-white'
+      >
+        <header className='text-black lg:max-w-[380px] max-w-[300px] font-work-sans flex flex-col gap-4'>
+          <H1>Lorem ipsum, dolor sit amet consectetur</H1>
+          <P customClass='text-gray'>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
+            nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum,
+            voluptate culpa nesciunt delectus iste?
+          </P>
+          <div>
+            <Button
+              text='Learn More'
+              variant='dark'
+            />
+          </div>
+        </header>
+        <div>
+          <Image
+            className='xl:max-w-[600px] lg:max-w-[500px] md-lg:max-w-[400px] md:max-w-[350px] max-w-[300px]'
+            src={connectImg}
+            alt='illustraion-of-people-connecting-through-internet'
+          />
+        </div>
+      </Container>
+
+      {/* Business Structure Section */}
+      <Container
+        customClass='bg-white flex sm:flex-row flex-col xl:gap-[80px] lg:gap-[40px] md:gap-[20px] gap-[30px] justify-between items-center'
+        bgColor='bg-white'
+      >
+        <header className='text-black lg:max-w-[380px] max-w-[300px] font-work-sans flex flex-col gap-4'>
+          <H1>Lorem ipsum, dolor sit amet consectetur</H1>
+          <P customClass='text-gray'>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
+            nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum,
+            voluptate culpa nesciunt delectus iste?
+          </P>
+          <div>
+            <Button
+              text='Learn More'
+              variant='dark'
+            />
+          </div>
+        </header>
+        <div>
+          <Image
+            className='xl:max-w-[600px] lg:max-w-[500px] md-lg:max-w-[400px] md:max-w-[350px] max-w-[300px]'
+            src={businessImg}
+            alt='illustraion-of-man-on-couch-doing-work-on-laptop'
+          />
+        </div>
+      </Container>
+
+      {/* Team Section */}
+      <Container
+        customClass='bg-white flex flex-col xl:gap-[80px] lg:gap-[40px] md:gap-[20px] gap-[30px] justify-between items-center'
+        bgColor='bg-white'
+      >
+        <header className='text-black text-center lg:max-w-[380px] max-w-[300px] font-work-sans'>
+          <H2 customClass='text-primary'>Team</H2>
+          <H1 customClass='capitalize my-2'>Our Talents</H1>
+          <P>
+            Lorem ipsum, dolor sit amet consectetur Suscipit nemo hic quos, ab,
+          </P>
+        </header>
+        <div className='flex xl:gap-14 lg:gap-12 md:gap-10 sm:gap-6 items-center sm:flex-row flex-col gap-5'></div>
+        <div>
+          <Button
+            text='View Team'
+            variant='dark'
           />
         </div>
       </Container>
