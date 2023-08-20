@@ -20,9 +20,13 @@ const config: Config = {
         white: '#FFFFFF',
         gray: '#21252980',
       },
+      boxShadow: {
+        '4xl': '3px 4px 12px 1px rgba(0, 0, 0, 0.25);',
+      },
     },
     screens: {
       xs: '380px',
+      'xs-sm': '550px',
       sm: '640px',
       md: '768px',
       'md-lg': '850px',

@@ -30,6 +30,22 @@ export const H2 = ({
   </h1>
 );
 
+export const H3 = ({
+  children,
+  customClass,
+}: {
+  children: string | JSX.Element | JSX.Element[];
+  customClass?: string;
+}) => (
+  <h3
+    className={`${
+      customClass ?? ''
+    } lg-xl:text-2xl lg:text-xl md-lg:text-lg text-base font-bold capitalize`}
+  >
+    {children}
+  </h3>
+);
+
 export const P = ({
   children,
   customClass,

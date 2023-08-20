@@ -1,4 +1,9 @@
+import Image, { StaticImageData } from 'next/image';
+
 import Container from '@/common/container';
+import Button from '@/common/button';
+import { H1, H2, P } from '@/components/Typography';
+
 import heroImg from '@/assets/hero-img.png';
 import connectImg from '@/assets/connect.png';
 import businessImg from '@/assets/business.png';
@@ -7,9 +12,11 @@ import googleImg from '@/assets/google.png';
 import microsoftImg from '@/assets/microsoft.png';
 import airbnbImg from '@/assets/airbnb.png';
 import spotifyImg from '@/assets/spotify.png';
-import Image, { StaticImageData } from 'next/image';
-import Button from '@/common/button';
-import { H1, H2, P } from '@/components/Typography';
+import member1 from '@/assets/member-1.png';
+import member2 from '@/assets/member-2.png';
+import member3 from '@/assets/member-3.png';
+import member4 from '@/assets/member-4.png';
+import TeamCard from '@/components/TeamCard';
 
 const ImgContainer = ({
   src,
@@ -170,7 +177,32 @@ export default function Home() {
             Lorem ipsum, dolor sit amet consectetur Suscipit nemo hic quos, ab,
           </P>
         </header>
-        <div className='flex xl:gap-14 lg:gap-12 md:gap-10 sm:gap-6 items-center sm:flex-row flex-col gap-5'></div>
+        <div className='grid md-lg:grid-cols-4 md-lg:grid-rows-1 xs-sm:grid-cols-2 xs-sm:grid-rows-2 grid-cols-1 grid-rows-1 xl:gap-12 lg:gap-10 md:gap-6 sm:gap-6 gap-5'>
+          <TeamCard
+            name='Peg Legge'
+            title='ceo'
+            img={member1}
+            alt='short-haired-girl-illustration'
+          />
+          <TeamCard
+            name='Richard Gurerra'
+            title='cto'
+            img={member2}
+            alt='short-haired-girl-illustration'
+          />
+          <TeamCard
+            name='Alexandera Stolz'
+            title='developer'
+            img={member3}
+            alt='short-haired-girl-illustration'
+          />
+          <TeamCard
+            name='Janet Bray'
+            title='designer'
+            img={member4}
+            alt='short-haired-girl-illustration'
+          />
+        </div>
         <div>
           <Button
             text='View Team'
