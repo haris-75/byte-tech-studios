@@ -8,7 +8,7 @@ export const H1 = ({
   <h1
     className={`${
       customClass ?? ''
-    } xl:text-[40px] xl:leading-[50px] lg:text-3xl text-2xl font-crimson-text`}
+    } xl:text-[40px] xl:leading-[50px] lg:text-3xl text-2xl font-crimson-text font-bold`}
   >
     {children}
   </h1>

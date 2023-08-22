@@ -27,8 +27,8 @@ export default function Portfolio() {
         bgColor='bg-white'
       >
         <header className='text-black text-center lg:max-w-[380px] max-w-[300px] font-work-sans'>
-          <H2 customClass='text-primary'>Partners</H2>
-          <H1 customClass='capitalize my-2'>Lorem ipsum dolor</H1>
+          <H2 customClass='text-primary'>Works</H2>
+          <H1 customClass='capitalize my-2'>Portfolio</H1>
           <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</P>
         </header>
         <div className='grid md:grid-cols-2 xl:gap-14 lg:gap-12 md:gap-10 sm:gap-6 items-center sm:flex-row flex-col gap-5'>
