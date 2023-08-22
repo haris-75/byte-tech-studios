@@ -1,5 +1,5 @@
-import Button from '@/common/button';
-import Container from '@/common/container';
+import Button from '@/common/Button';
+import Container from '@/common/Container';
 import { H2, H1, P } from '@/components/Typography';
 import Image, { StaticImageData } from 'next/image';
 import portfolio1 from '@/assets/portfolio-1.png';

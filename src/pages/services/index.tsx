@@ -1,5 +1,5 @@
-import Button from '@/common/button';
-import Container from '@/common/container';
+import Button from '@/common/Button';
+import Container from '@/common/Container';
 import { H2, H1, P } from '@/components/Typography';
 import checkIcon from '@/assets/check.svg';
 import Image from 'next/image';
