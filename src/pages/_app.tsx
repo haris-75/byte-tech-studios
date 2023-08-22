@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import '@/globals.css';
 import React from 'react';
+import Layout from '@/components/Layout';
 
 function MyApp({ Component, pageProps }: any) {
   return (
@@ -12,7 +13,9 @@ function MyApp({ Component, pageProps }: any) {
           content='Where innovation meet tech'
         />
       </Head>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </div>
   );
 }
