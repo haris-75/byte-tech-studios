@@ -1,8 +1,8 @@
 import Image, { StaticImageData } from 'next/image';
 
-import Container from '@/common/Container';
-import Button from '@/common/Button';
 import { H1, H2, P } from '@/components/Typography';
+import Button from '@/common/Button';
+import Container from '@/common/Container/index';
 
 import heroImg from '@/assets/hero-img.png';
 import connectImg from '@/assets/connect.png';
