@@ -3,3 +3,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Mobile Navbar Icon */
+
+.hamburger {
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  border-radius: 5px;
+  z-index: 10;
+  transition: all 0.5s ease;
+}
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: white;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+.hamburger::before {
+  transform: translateY(-6px);
+}
+.hamburger::after {
+  transform: translateY(6px);
+}
+
+.show-mobile-nav.hamburger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.show-mobile-nav.hamburger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+.show-mobile-nav.hamburger {
+  transform: translateX(-50px);
+  background: transparent;
+}
