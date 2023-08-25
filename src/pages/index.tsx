@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 
 import { H1, H2, P } from '@/components/Typography';
 import Button from '@/common/Button';
@@ -7,34 +7,12 @@ import Container from '@/common/Container/index';
 import heroImg from '@/assets/hero-img.png';
 import connectImg from '@/assets/connect.png';
 import businessImg from '@/assets/business.png';
-import fbImg from '@/assets/fb.png';
-import googleImg from '@/assets/google.png';
-import microsoftImg from '@/assets/microsoft.png';
-import airbnbImg from '@/assets/airbnb.png';
-import spotifyImg from '@/assets/spotify.png';
 import member1 from '@/assets/member-1.png';
 import member2 from '@/assets/member-2.png';
 import member3 from '@/assets/member-3.png';
 import member4 from '@/assets/member-4.png';
 import TeamCard from '@/components/TeamCard';
-
-const ImgContainer = ({
-  src,
-  alt,
-  customClass,
-}: {
-  src: StaticImageData;
-  alt: string;
-  customClass?: string;
-}) => (
-  <Image
-    className={`lg:max-w-[150px] sm:max-w-[100px] max-w-[150px] ${
-      customClass ?? ''
-    }`}
-    src={src}
-    alt={alt}
-  />
-);
+import PartnerSlider from '@/components/PartnersSlider';
 
 export default function Home() {
   return (
@@ -77,30 +55,7 @@ export default function Home() {
           <H1 customClass='capitalize my-2'>Lorem ipsum dolor</H1>
           <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</P>
         </header>
-        <div className='flex xl:gap-14 lg:gap-12 md:gap-10 sm:gap-6 items-center sm:flex-row flex-col gap-5'>
-          <ImgContainer
-            src={googleImg}
-            alt='google-logo'
-          />
-          <ImgContainer
-            src={microsoftImg}
-            alt='microsoft-logo'
-            customClass='lg:max-h-[35px] sm:max-h-[25px]'
-          />
-          <ImgContainer
-            src={airbnbImg}
-            alt='airbnb-logo'
-          />
-          <ImgContainer
-            src={fbImg}
-            alt='fb-logo'
-            customClass='lg:max-h-[30px] sm:max-h-[20px]'
-          />
-          <ImgContainer
-            src={spotifyImg}
-            alt='spotify-logo'
-          />
-        </div>
+        <PartnerSlider />
         <div>
           <Button
             text='Learn More'

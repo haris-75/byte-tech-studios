@@ -41,3 +41,60 @@
   transform: translateX(-50px);
   background: transparent;
 }
+
+/* Slider Animation */
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 5));
+  }
+}
+
+.slider {
+  background: white;
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+.slide-track {
+  animation: scroll 30s linear infinite;
+  display: flex;
+  width: calc(250px * 10);
+  align-items: center;
+}
+
+.slide {
+  width: 250px;
+}
+
+.slider::after,
+.slider::before {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: '';
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
