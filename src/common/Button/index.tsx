@@ -13,7 +13,7 @@ export default function Button({
     <button
       className={`font-work-sans rounded-[5px] lg:px-10 lg:py-2 md:px-7 md:py-1.5 px-5 py-1 ${customClass} ${
         variant === 'light' ? 'bg-white text-dark' : 'bg-dark text-white'
-      }`}
+      } hover:scale-110 transition duration-700 ease-in-out`}
     >
       {text}
     </button>
